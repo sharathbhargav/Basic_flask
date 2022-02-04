@@ -1,0 +1,12 @@
+<form action='' method = "POST">
+  <label>Publication to delete</label>
+  <select id="pubs" name="pub_id">
+
+    {% for row in pubs %}
+    <option value={{ row[0]}}>{{ row[1] }}</option>
+    {% endfor %}
+    
+  </select>
+  
+  <p><input type = "submit" value = "Submit" /></p>
+  </form>

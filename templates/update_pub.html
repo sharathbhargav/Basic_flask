@@ -1,0 +1,14 @@
+<form action='' method = "POST">
+  <label>Publication to Update</label>
+  <select id="pubs" name="pub_id">
+
+    {% for row in pubs %}
+    <option value={{ row[0]}}>{{ row[1] }}</option>
+    {% endfor %}
+    
+  </select>
+    <p>student id <input type = "integer" name = "student_id" /></p>
+    <p>title <input type = "text" name = "title" /></p>
+    <p>year <input type = "text" name = "year" /></p>
+    <p><input type = "submit" value = "Submit" /></p>
+  </form>

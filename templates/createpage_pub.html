@@ -1,0 +1,13 @@
+<form action='' method = "POST">
+  <label>Student</label>
+  <select id="users" name="student_id">
+
+    {% for row in users %}
+    <option value={{ row[0]}}>{{ row[1] }}</option>
+    {% endfor %}
+    
+  </select>
+    <p>title <input type = "text" name = "title" /></p>
+    <p>year <input type = "text" name = "year" /></p>
+    <p><input type = "submit" value = "Submit" /></p>
+  </form>
